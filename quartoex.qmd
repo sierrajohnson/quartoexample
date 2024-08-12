@@ -17,8 +17,15 @@ h <- function() i()
 i <- function() stop("Error :)")
 ```
 
+```{r}
+a <- function(x) b(x)
+b <- function(x) c(x)
+c <- function(x) x+1
+
+```
+
 running code
 
 ```{r}
-f()
+a(f())
 ```
