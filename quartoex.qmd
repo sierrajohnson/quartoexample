@@ -7,7 +7,8 @@ editor: visual
 ## Quarto Example
 
 ```{r}
-options(rlang_backtrace_on_error = "full")
+# this doesn't work, so must be slightly wrong.
+# options(rlang_backtrace_on_error = "full")
 ```
 
 ```{r}
@@ -17,15 +18,8 @@ h <- function() i()
 i <- function() stop("Error :)")
 ```
 
-```{r}
-a <- function(x) b(x)
-b <- function(x) c(x)
-c <- function(x) x+1
-
-```
-
 running code
 
 ```{r}
-a(f())
+f()
 ```
