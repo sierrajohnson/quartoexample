@@ -7,6 +7,10 @@ editor: visual
 ## Quarto Example
 
 ```{r}
+options(rlang_backtrace_on_error = "full")
+```
+
+```{r}
 f <- function() g()
 g <- function() h()
 h <- function() i()
